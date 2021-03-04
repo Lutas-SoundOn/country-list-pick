@@ -141,6 +141,10 @@ class _SelectionListState extends State<SelectionList> {
                               hintText:
                                   widget.theme?.searchHintText ?? "Search...",
                             ),
+                            style: TextStyle(
+                              color: widget.theme.textColor,
+                              fontWeight: FontWeight.w400,
+                            ),
                             onChanged: _filterElements,
                           ),
                         ),
