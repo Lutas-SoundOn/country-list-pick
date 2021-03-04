@@ -119,7 +119,12 @@ class _SelectionListState extends State<SelectionList> {
                       children: [
                         Padding(
                           padding: const EdgeInsets.all(15.0),
-                          child: Text(widget.theme?.searchText ?? 'SEARCH'),
+                          child: Text(widget.theme?.searchText ?? 'SEARCH',
+                              style: TextStyle(
+                                color: widget.theme.textColor,
+                                fontWeight: FontWeight.w400,
+                              ),
+                          ),
                         ),
                         Container(
                           color: Colors.white,
@@ -142,7 +147,12 @@ class _SelectionListState extends State<SelectionList> {
                         Padding(
                           padding: const EdgeInsets.all(15.0),
                           child:
-                              Text(widget.theme?.lastPickText ?? 'LAST PICK'),
+                              Text(widget.theme?.lastPickText ?? 'LAST PICK',
+                                  style: TextStyle(
+                                    color: widget.theme.textColor,
+                                    fontWeight: FontWeight.w400,
+                                  ),
+                              ),
                         ),
                         Container(
                           color: Colors.white,
@@ -154,7 +164,12 @@ class _SelectionListState extends State<SelectionList> {
                                 package: 'country_list_pick',
                                 width: 32.0,
                               ),
-                              title: Text(widget.initialSelection.name),
+                              title: Text(widget.initialSelection.name,
+                                style: TextStyle(
+                                  color: widget.theme.textColor,
+                                  fontWeight: FontWeight.w400,
+                                ),
+                              ),
                               trailing: Padding(
                                 padding: const EdgeInsets.only(right: 20.0),
                                 child: Icon(Icons.check, color: Colors.green),
@@ -216,7 +231,7 @@ class _SelectionListState extends State<SelectionList> {
             width: 30.0,
           ),
           title: Text(e.name, style: TextStyle(
-            color: Colors.grey[900],
+            color: widget.theme.textColor,
             fontWeight: FontWeight.w400,
           )),
           onTap: () {
