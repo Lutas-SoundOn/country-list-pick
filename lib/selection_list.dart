@@ -215,7 +215,7 @@ class _SelectionListState extends State<SelectionList> {
             package: 'country_list_pick',
             width: 30.0,
           ),
-          title: Text(e.name, color: widget.theme.textColor),
+          title: Text(e.name, color: Color.grey[900]),
           onTap: () {
             _sendDataBack(context, e);
           },

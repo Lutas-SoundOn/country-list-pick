@@ -1,3 +1,6 @@
+## 1.0.1+4
+- Theme add textColor
+
 ## 1.0.1+3
 - Option SafeArea
   
