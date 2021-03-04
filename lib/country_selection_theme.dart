@@ -13,6 +13,7 @@ class CountryTheme {
   final bool isDownIcon;
   final String initialSelection;
   final bool showEnglishName;
+  final Color textColor;
   //final void Function() systemUiOverlayStyle;
 
   CountryTheme({
@@ -29,5 +30,6 @@ class CountryTheme {
     this.isDownIcon,
     this.initialSelection,
     this.showEnglishName,
+    this.textColor,
   });
 }
